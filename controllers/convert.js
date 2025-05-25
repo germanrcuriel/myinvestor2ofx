@@ -55,7 +55,7 @@ const setStatement = (input, { amount, date, memo }) => {
     amount: statementAmount,
     date: statementDate,
     id: hash,
-    memo
+    memo: memo || '-'
   })
 }
 
