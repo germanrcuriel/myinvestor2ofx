@@ -49,13 +49,14 @@ const setBalance = (input, { balance }) => {
 const setStatement = (input, { amount, date, memo }) => {
   const statementAmount = strToMoney(amount)
   const statementDate = strToDatetime(date)
-  const hash = md5(`${statementAmount}${statementDate}${memo}`)
+  const statementMemo = memo || '-'
+  const hash = md5(`${statementAmount}${statementDate}${statementMemo}`)
 
   input.statements.push({
     amount: statementAmount,
     date: statementDate,
     id: hash,
-    memo: memo || '-'
+    memo: statementMemo
   })
 }
 
