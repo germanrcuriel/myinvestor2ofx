@@ -29,7 +29,7 @@ const getDestinationFile = (file) => {
 }
 
 const setBankDetails = (input, { account }) => {
-  input.bankAccount = account.slice(12)
+  input.bankAccount = account
 }
 
 const setDateRange = (input, filename) => {
