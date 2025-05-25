@@ -1,6 +1,6 @@
-# MyInvestor XLS to OFX
+# MyInvestor XLSX to OFX
 
-A little express application to convert MyInvestor XLS to OFX format.
+A little express application to convert MyInvestor XLSX to OFX format.
 
 ![](./screenshot/mi2ofx.png)
 
