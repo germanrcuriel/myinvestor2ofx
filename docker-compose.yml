@@ -1,0 +1,7 @@
+services:
+  mi2ofx:
+    build: .
+    container_name: mi2ofx
+    restart: unless-stopped
+    ports:
+      - ${PORT:-8080}:8080
